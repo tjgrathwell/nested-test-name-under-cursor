@@ -1,5 +1,7 @@
 # nested-test-name-under-cursor
 
+[![Build Status](https://travis-ci.org/tjgrathwell/nested-test-name-under-cursor.svg?branch=master)](http://travis-ci.org/tjgrathwell/nested-test-name-under-cursor)
+
 Determine the full name of a test or group of tests at a given file + line number.
 
 Given the following Jasmine/Mocha/etc test:
