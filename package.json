@@ -1,8 +1,11 @@
 {
   "name": "nested-test-name-under-cursor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Try to discover the full name of the Jasmine test in a given file + line number",
   "main": "nested-test-name-under-cursor.js",
+  "bin": {
+    "nested-test-name-under-cursor": "./bin/nested-test-name-under-cursor.js"
+  },
   "scripts": {
     "test": "node ./node_modules/jasmine/bin/jasmine"
   },
