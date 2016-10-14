@@ -41,7 +41,7 @@ function findFirstDescribe(tree) {
 module.exports = {
   determineTestName: function (filename, lineNumber) {
     const content = fs.readFileSync(filename, 'utf8');
-    const tree = acorn.parse(content);
+    const tree = acorn.parse(content, {sourceType: 'module'});
     const offset = lineNumberToOffset(content, lineNumber);
 
     let ancestors = [];
