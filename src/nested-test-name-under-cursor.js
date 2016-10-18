@@ -55,8 +55,8 @@ module.exports = {
       }
     });
 
-    const result = acornWalk.findNodeAround(tree, offset, null, walker);
-    if (result && result.node.type == 'Program') {
+    acornWalk.findNodeAround(tree, offset, null, walker);
+    if (ancestors.length === 0) {
       const firstDescribe = findFirstDescribe(tree);
       if (firstDescribe) {
         ancestors.push(firstDescribe);
